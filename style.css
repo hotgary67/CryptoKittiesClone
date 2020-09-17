@@ -1,0 +1,67 @@
+#body {
+    background-color: #f9e29c;
+    width: 200px;
+    height: 200px;
+    border-radius: 30% 50% 20% 10%;
+    }
+
+.eyes {
+  position:relative;
+  top: 30px;
+  display: flex;
+  margin: 35px;
+}
+
+
+.eye1{
+    background-color:#e82fdd;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+      position: relative;
+}
+.eye2{
+    background-color: red;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+      margin: 10px;
+    position: relative;
+}
+
+.pupils {
+      background-color: black;
+      width: 26px;
+      height: 23px;
+      position: absolute;
+      border-radius: 40%;
+      top: 15px;
+      left: 10px;
+}
+
+.ears {
+ position: relative;
+
+}
+
+.ear {
+    border-radius: 90% 0% 90% 0%;
+    background-color: #f9e29c;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+
+}
+
+.left_ear {
+  background-color: blue;
+  transform: scale(1,-1);
+  left:0;
+  rotate: (0 deg)
+}
+
+.right_ear{
+    left: 100px;
+
+}
