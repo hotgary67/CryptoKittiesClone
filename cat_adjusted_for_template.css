@@ -1,14 +1,4 @@
-}
-html {
-    box-sizing: border-box;
-    overflow-y: scroll;
-}
-body {
-    background: #607d8b;
-
-}
-
-.hat{
+#hat{
   position: absolute;
     pointer-events: none;
     width:90px;
@@ -50,7 +40,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
 
 
 
-.head {
+#head {
     background-color: #f7c327;
     width: 200px;
     height: 160px;
@@ -151,16 +141,16 @@ background-image: linear-gradient(45deg, #000101, #060709);
 
   transform: scale(1,-1);
   left:0;
-  background-image: linear-gradient(45deg, #fccf0a, #155418);
-/* box-shadow: 5px 25px 25px -9px #e42e74;*/
+background-image: linear-gradient(45deg, #fccf0a, #155418);
+box-shadow: 5px 25px 25px -9px #e42e74;
 
 }
 
 .right_ear{
     left: 100px;
     z-index: -1;
-   background-image: linear-gradient(45deg, #0082e9, #ffbe1a);
-  /*   box-shadow: 3px -25px 18px -8px #e42e74;*/
+    background-image: linear-gradient(45deg, #0082e9, #ffbe1a);
+    box-shadow: 3px -25px 18px -8px #e42e74;
 }
 
 .realnose {
@@ -209,6 +199,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
   left:5%;
   position:absolute;
   z-index:8;
+  background-color:#f7c327;
   transform: scale(1,-1);
 
 }
@@ -221,6 +212,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
   left:7%;
   position:absolute;
   z-index:8;
+  background-color:#f7c327;
   transform: scale(1,-1);
 
 }
@@ -234,6 +226,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
   left:10%;
   position:absolute;
   z-index:8;
+  background-color:#f7c327;
   transform: scale(1,-1);
 
 }
@@ -246,6 +239,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
   right:10%;
   position:absolute;
   z-index:8;
+  background-color#f7c327;
   transform: scale(1,-1);
 
 }
@@ -259,6 +253,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
   right:08%;
   position:absolute;
   z-index:1;
+  background-color#f7c327;
   transform: scale(1,-1);
 
 }
@@ -307,7 +302,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
 
 
 
-.body {
+#body {
     background-color: #f7c327;
     width: 200px;
     height: 150px;
@@ -335,8 +330,8 @@ background-image: linear-gradient(45deg, #000101, #060709);
     left: -60px;
     display: flex;
     margin: 0px;
-      z-index: 2;
-          }
+
+    }
 
     .armsleft {
       background-color: #ffe9a9;
@@ -347,8 +342,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
       position: relative;
       border-style: solid;
       border-color: black;
-      box-shadow: 5px 25px 25px -9px black;
-      z-index: 2;
+              box-shadow: 5px 25px 25px -9px black;
       }
 
       .armsleftinside {
@@ -361,7 +355,6 @@ background-image: linear-gradient(45deg, #000101, #060709);
         position: relative;
         border-style: solid;
         border-color: black;
-            z-index: 2;
 
         }
         .armsleftinside2 {
@@ -374,7 +367,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
           position: relative;
           border-style: solid;
           border-color: black;
-              z-index: 2;
+
           }
 
           .armsleftinside3 {
@@ -387,7 +380,6 @@ background-image: linear-gradient(45deg, #000101, #060709);
             position: relative;
             border-style: solid;
             border-color: black;
-                z-index: 2;
             }
 
       .armsright{
@@ -399,8 +391,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
         position: relative;
         border-style: solid;
         border-color: black;
-        box-shadow: 5px 25px 25px -9px black;
-            z-index: 52;
+          box-shadow: 5px 25px 25px -9px black;
 
         }
         .armsrighttinside {
@@ -413,7 +404,6 @@ background-image: linear-gradient(45deg, #000101, #060709);
           position: relative;
           border-style: solid;
           border-color: black;
-              z-index: 55;
           }
           .armsrightinside2 {
             background-color: black;
@@ -425,8 +415,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
             position: relative;
             border-style: solid;
             border-color: black;
-            z-index: 55;
-
+            z-index: 110;
             }
 
             .armsrightinside3 {
@@ -439,7 +428,6 @@ background-image: linear-gradient(45deg, #000101, #060709);
               position: relative;
               border-style: solid;
               border-color: black;
-                  z-index: 5;
               }
 
 .sunflower{
@@ -448,10 +436,11 @@ background-image: linear-gradient(45deg, #000101, #060709);
   width:100px;
   left:40px
 }
+
 .trunk{
 	height: 65px; width: 10px;
 	background:#77b039;
-	left: 154px;top:329px;
+	left: 52px;top:0px;
 	position:absolute;
 	z-index:0;
 /*	animation:trunk 2s infinite linear;*/
@@ -493,25 +482,24 @@ background-image: linear-gradient(45deg, #000101, #060709);
 }
 
 .vase{
-  position:relative;
-   color: #3f51b5;
+position:absolute;
    top:65px;
-   left:56px;
+   left:20px;
    height: 0;
    width: 76px;
    border-top: 90px solid #03a9f4;
    border-left: 16px solid transparent;
    border-right: 16px solid transparent;
-   z-index: 1;
+     z-index: 1;
 }
 .vase:before,.vase:after {
 	content: '';
 	position: absolute;
-	background:currentColor;
+	background:#3f51b2;
     z-index: 1;
 }
 .vase:before{
-	background: currentColor;
+	background: #3f51b5;
 	width: 78px; height: 20px;
 	top: -90px; left:-18px;
 	position:absolute;
@@ -519,7 +507,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
 	-moz-transform: 0 5px 10px -9px black;
 	-ms-transform: 0 5px 10px -9px black;
 	-o-transform: 0 5px 10px -9px black;
-  z-index: 5;
+    z-index: 5;
 }
 
 .legs {
@@ -685,7 +673,7 @@ background-image: linear-gradient(45deg, #000101, #060709);
 
 */
 
-.catTail {
+#catTail {
   position: absolute;
   margin-left: 55px;
 	margin-top: 40px;
@@ -695,21 +683,9 @@ background-image: linear-gradient(45deg, #000101, #060709);
   z-index: -1;
 
 }
-
-.dnabody {
- text-align: center;
-}
-
 /*Each span creates a circle that extends the tail and animates up and down individually, add more and style with left: +5px and a 0.2s additional delay from the previous to create a longer tail.*/
-.dnaDiv {
-  position: relative;
-  top:250px;
-  left: 00px;
 
-}
-
-
-.catTail span {
+span {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -792,7 +768,6 @@ span:nth-child(15){
 	/*This universally changes the colour of the cat. For multi-coloured cats, delete it and apply background-color to components individually*/
   background-color: #242424;
 }
-
 
 @keyframes tailWave {
 	0% {transform:translateY(0px);}
